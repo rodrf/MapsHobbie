@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:elevation="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constrainMain"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    style="@style/tv_title_main"
+                    android:id="@+id/tvTitleDirection"
+                    app:layout_constraintTop_toTopOf="@id/constrainMain"
+                    app:layout_constraintStart_toStartOf="@id/constrainMain"
+                    android:text="Dirección: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    style="@style/tv_subtitle_main"
+                    app:layout_constraintTop_toTopOf="@id/constrainMain"
+                    app:layout_constraintStart_toEndOf="@id/tvTitleDirection"
+                    android:id="@+id/tvDirection"
+                    tools:text="Esta es una direccion"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    style="@style/tv_title_main"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleDirection"
+                    app:layout_constraintStart_toStartOf="@id/constrainMain"
+                    android:id="@+id/tvTitleLatitude"
+                    android:text="Latitude: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    style="@style/tv_subtitle_main"
+                    android:id="@+id/tvLatitude"
+                    app:layout_constraintStart_toEndOf="@id/tvTitleLatitude"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleDirection"
+                    android:layout_width="wrap_content"
+                    android:text="120982038729874"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    style="@style/tv_title_main"
+                    android:text="Longitud: "
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleLatitude"
+                    app:layout_constraintStart_toStartOf="@id/constrainMain"
+                    android:id="@+id/tvTitleLongitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    style="@style/tv_subtitle_main"
+                    android:id="@+id/tvLongitude"
+                    android:text="0982379873987"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleLatitude"
+                    app:layout_constraintStart_toEndOf="@id/tvTitleLongitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
